@@ -13,7 +13,7 @@ class TestBun:
         bun = Bun("С кунжутом", 11.5)
         assert bun.get_price() == 11.5
 
-    def test_bun_invalid_price(self):
+    def test_bun_invalid_price_fail(self):
         """Проверяем, что не происходит ошибка при инициализации с нулевой ценой."""
         bun = Bun("Plain", 0.0)
         assert bun.get_price() == 0.0

@@ -3,22 +3,22 @@ from praktikum.ingredient import Ingredient
 
 class TestIngredient:
 
-    def test_ingredient_name(self):
+    def test_ingredient_add_name_success(self):
         """Проверяем метод get_name()."""
         ingredient = Ingredient("sauce", "Ketchup", 0.5)
         assert ingredient.get_name() == "Ketchup"
 
-    def test_ingredient_price(self):
+    def test_ingredient_add_price_success(self):
         """Проверяем метод get_price()."""
         ingredient = Ingredient("filling", "Lettuce", 0.75)
         assert ingredient.get_price() == 0.75
 
-    def test_ingredient_type(self):
+    def test_ingredient_add_type_success(self):
         """Проверяем метод get_type()."""
         ingredient = Ingredient("sauce", "Mayo", 0.8)
         assert ingredient.get_type() == "sauce"
 
-    def test_ingredient_invalid_type(self):
+    def test_ingredient_add_invalid_type_fail(self):
         """Проверяем, что не происходит ошибка при инициализации с невалидным типом."""
         ingredient = Ingredient("unknown_type", "Spice", 0.3)
         assert ingredient.get_type() == "unknown_type"
