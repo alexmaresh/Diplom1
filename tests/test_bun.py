@@ -2,7 +2,6 @@ from praktikum.bun import Bun
 
 
 class TestBun:
-
     def test_bun_add_name_success(self):
         """Проверяем метод get_name()."""
         bun = Bun("Сладкая", 12.0)

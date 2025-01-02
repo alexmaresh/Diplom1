@@ -2,7 +2,6 @@ from praktikum.ingredient import Ingredient
 
 
 class TestIngredient:
-
     def test_ingredient_add_name_success(self):
         """Проверяем метод get_name()."""
         ingredient = Ingredient("sauce", "Ketchup", 0.5)
