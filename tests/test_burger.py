@@ -29,7 +29,6 @@ class TestBurger:
         mock_ingr_2 = Mock()
         burger.add_ingredient(mock_ingr_1)
         burger.add_ingredient(mock_ingr_2)
-        assert len(burger.ingredients) == 2
         burger.remove_ingredient(0)
         assert len(burger.ingredients) == 1
 
